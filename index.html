@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CNLY — Designing and developing digital experiences.</title>
+<meta name="description" content="Independent projects, experiments, and ideas — built with curiosity and care.">
+<meta name="theme-color" content="#ffffff" id="tc">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cnly.app/">
+<meta property="og:title" content="CNLY">
+<meta property="og:description" content="Independent projects, experiments, and ideas — built with curiosity and care.">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preload" href="assets/fonts/GeistPixel-Square.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+(function(){var t;try{t=localStorage.getItem('cnly-theme')}catch(e){}
+if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+document.documentElement.dataset.theme=t;
+document.getElementById('tc').content=t==='dark'?'#0c0c0f':'#ffffff'})();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="field" aria-hidden="true"></canvas>
+<main class="stage">
+  <section class="panel" aria-labelledby="h">
+    <i class="tick tl"></i><i class="tick tr"></i><i class="tick bl"></i><i class="tick br"></i>
+    <h1 class="brand">
+      <img class="logo logo-light" src="assets/CNLY_BLACK_LOGO.png" width="2172" height="724" alt="CNLY">
+      <img class="logo logo-dark" src="assets/CNLY_WHITE_LOGO.png" width="2172" height="724" alt="CNLY">
+    </h1>
+    <p class="headline" id="h"><span>Designing and developing</span> <span>digital experiences.</span></p>
+    <p class="desc">Independent projects, experiments, and ideas — built with curiosity and care.</p>
+    <footer class="meta">
+      <span class="status"><i class="sq" aria-hidden="true"></i>Projects coming soon.</span>
+      <span class="sig">cnly.app</span>
+    </footer>
+  </section>
+</main>
+<button id="theme" class="theme" type="button" aria-label="Switch theme">
+  <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 2a6 6 0 0 1 0 12z" fill="currentColor"/></svg>
+</button>
+<script src="main.js" defer></script>
+</body>
+</html>
